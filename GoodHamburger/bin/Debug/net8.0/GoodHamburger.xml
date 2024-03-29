@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GoodHamburger</name>
+    </assembly>
+    <members>
+        <member name="M:GoodHamburger.Controllers.OrderController.SendOrder(GoodHamburger.Models.Product.Products)">
+            <summary>
+            Creates an order.
+            </summary>
+            <param></param>
+            <returns>Return the amount that will be charged to the customer</returns>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:GoodHamburger.Controllers.OrderController.GetOrder">
+            <summary>
+            Retrieves all orders.
+            </summary>
+            <param></param>
+            <returns>Returns a list of orders.</returns>
+            <response code="200">Ok</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:GoodHamburger.Controllers.OrderController.UpdateOrder(System.Int32,GoodHamburger.Models.Product.Products)">
+            <summary>
+            Updates an order.
+            </summary>
+            <param name="OrderId"></param>
+            <returns>Returns true if the order was successfully updated; otherwise, false.</returns>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:GoodHamburger.Controllers.OrderController.RemoveOrder(System.Int32)">
+            <summary>
+            Removes an order.
+            </summary>
+            <param name="OrderId">The ID of the order to be removed.</param>
+            <returns>Returns true if the order was successfully removed; otherwise, false.</returns>
+            <response code="200">Ok</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:GoodHamburger.Controllers.ProductController.GetProducts">
+            <summary>
+            Retrieves all products.
+            </summary>
+            <param></param>
+            <returns>Returns a list of all sandwiches and extras.</returns>
+            <response code="200">Ok</response>
+            <response code="204">No Content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:GoodHamburger.Controllers.ProductController.GetSandwich">
+            <summary>
+            Retrieves all sandwiches.
+            </summary>
+            <param></param>
+            <returns>Returns a list of sandwiches.</returns>
+            <response code="200">Ok</response>
+            <response code="204">No Content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:GoodHamburger.Controllers.ProductController.GetExtra">
+            <summary>
+            Retrieves all extras.
+            </summary>
+            <param></param>
+            <returns>Returns a list of extras.</returns>
+            <response code="200">Ok</response>
+            <response code="204">No Content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+    </members>
+</doc>
